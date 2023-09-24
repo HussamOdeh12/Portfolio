@@ -11,7 +11,7 @@ const Header = () => {
           <Link href={"/"}>
             <Image
               className="hidden lg:block"
-              src={"/logo.svg"}
+              src={"/final_logo.svg"}
               width={220}
               height={48}
               alt=""
