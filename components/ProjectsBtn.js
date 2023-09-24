@@ -8,7 +8,7 @@ const ProjectsBtn = () => {
       <Link
         className="relative w-[110px] h-[110px] flex justify-center items-center
         bg-circleStar bg-cover bg-center bg-no-repeat group"
-        href={"/work"}
+        href={"/projects"}
       >
         <Image
           className="animate-spin-slow w-full h-full max-w-[80px] max-h-[80px]"
