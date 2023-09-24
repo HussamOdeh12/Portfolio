@@ -38,7 +38,7 @@ const Contact = () => {
         <div className="flex flex-col w-full max-w-[700px] z-10">
           {/* text */}
           <motion.h2
-            className="h2 text-center mb-4 mt-12"
+            className="h2 text-center mb-4"
             variants={fadeIn("left", 0.4)}
             initial="hidden"
             animate="show"

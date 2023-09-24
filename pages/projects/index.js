@@ -1,4 +1,4 @@
-import ProjectBlogs from "../../components/WorkBlog";
+import ProjectBlogs from "../../components/ProjectsBlog";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 

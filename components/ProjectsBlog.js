@@ -9,7 +9,7 @@ const ProjectsBlog = () => {
     <>
       <section className="pb-10">
         <div className="container">
-          <div className="flex flex-wrap -mx-4 bg-black/50 p-4 rounded-xl z-10">
+          <div className="flex flex-wrap -mx-4 bg-black/25 p-4 rounded-xl z-10">
             <BlogCard
               live="Live Demo"
               repo="Code"
