@@ -5,14 +5,14 @@ import { fadeIn } from "../variants";
 
 const Home = () => {
   return (
-    <div className="bg-primary/75 page">
+    <div className="bg-primary/75 h-screen">
       {/* text */}
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center xl:text-left h-full container mx-auto">
           {/* title */}
           <motion.h2
             className="h2 uppercase pt-0 lg:pt-16 z-10"
-            variants={fadeIn("right", 0.4)}
+            variants={fadeIn("down", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -23,7 +23,7 @@ const Home = () => {
           {/* subtitle */}
           <motion.p
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-sm z-10"
-            variants={fadeIn("left", 0.6)}
+            variants={fadeIn("down", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -36,7 +36,7 @@ const Home = () => {
           {/* button */}
           <motion.div
             className="hidden xl:flex z-10"
-            variants={fadeIn("right", 0.8)}
+            variants={fadeIn("down", 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
