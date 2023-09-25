@@ -29,7 +29,7 @@ module.exports = {
       backgroundImage: {
         circles: 'url("/bg-circles.png")',
         circleStar: 'url("/circle-star.svg")',
-        site: 'url("/site-bg.svg")',
+        site: 'url("/background.png")',
       },
       animation: {
         "spin-slow": "spin 7s linear infinite",

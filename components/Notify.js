@@ -2,7 +2,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export const successNotify = () => {
-  toast.info("Message was sent", {
+  toast.info("Message has been sent", {
     position: "bottom-left",
     autoClose: 2500,
     hideProgressBar: false,

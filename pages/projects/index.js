@@ -1,17 +1,20 @@
 import ProjectBlogs from "../../components/ProjectsBlog";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import ParticlesContainer from "../../components/ParticlesContainer";
+import { BsArrowRight } from "react-icons/bs";
+import Link from "next/link";
 
 const Projects = () => {
   return (
-    <div className="h-fit bg-primary/75 py-32 flex items-center">
+    <div className="h-[100%] bg-primary/75 pt-32 flex items-center">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center">
           {/* text */}
           <div className="text-center flex xl:w-[30vw] flex-col lg:text-left xl:mb-0 z-10">
             <motion.h2
               className="h2 text-center"
-              variants={fadeIn("left", 0.2)}
+              variants={fadeIn("left", 0.4)}
               initial="hidden"
               animate="show"
               exit="hidden"
@@ -19,8 +22,8 @@ const Projects = () => {
               My <span className="text-accent">Projects.</span>
             </motion.h2>
             <motion.p
-              className="text-xs md:text-sm mb-6 mx-auto lg:mx-0 text-center"
-              variants={fadeIn("left", 0.2)}
+              className="text-xs md:text-sm mb-4 mx-auto lg:mx-0 text-center"
+              variants={fadeIn("right", 0.6)}
               initial="hidden"
               animate="show"
               exit="hidden"
@@ -30,16 +33,14 @@ const Projects = () => {
             </motion.p>
           </div>
           {/* Projects */}
-          <motion.div
-            className="max-w-[85%]"
-            variants={fadeIn("right", 0.6)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-          >
+          <div className="max-w-[100%] lg:max-w-[84.5%] mb-8 lg:mb-0">
             <ProjectBlogs />
-          </motion.div>
+          </div>
         </div>
+      </div>
+      <div className="w-full h-full absolute right-0 bottom-0">
+        {/* particles */}
+        <ParticlesContainer />
       </div>
     </div>
   );

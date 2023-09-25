@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { successNotify } from "../../components/Notify";
 import { ToastContainer } from "react-toastify";
+import ParticlesContainer from "../../components/ParticlesContainer";
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
@@ -48,7 +49,7 @@ const Contact = () => {
           </motion.h2>
           <motion.p
             className="text-xs md:text-sm text-center mb-4"
-            variants={fadeIn("right", 0.4)}
+            variants={fadeIn("right", 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -58,14 +59,10 @@ const Contact = () => {
             connect and explore opportunities!
           </motion.p>
           {/* form */}
-          <motion.form
+          <form
             ref={form}
             onSubmit={sendEmail}
             className="flex-1 flex flex-col items-center md:items-start gap-2 w-full mx-auto"
-            variants={fadeIn("left", 0.6)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
           >
             {/* input group */}
             <div className="flex gap-x-6 w-full">
@@ -105,10 +102,14 @@ const Contact = () => {
               group-hover:opacity-100 transition-all duration-300 absolute text-[22px]"
               />
             </button>
-          </motion.form>
+          </form>
         </div>
       </div>
       <ToastContainer newestOnTop={true} rtl={false} pauseOnFocusLoss={false} />
+      <div className="w-full h-full absolute right-0 bottom-0">
+        {/* particles */}
+        <ParticlesContainer />
+      </div>
     </div>
   );
 };

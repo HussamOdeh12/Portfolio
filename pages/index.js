@@ -12,7 +12,7 @@ const Home = () => {
           {/* title */}
           <motion.h2
             className="h2 uppercase pt-0 lg:pt-16 z-10"
-            variants={fadeIn("down", 0.2)}
+            variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -23,7 +23,7 @@ const Home = () => {
           {/* subtitle */}
           <motion.p
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-sm z-10"
-            variants={fadeIn("down", 0.4)}
+            variants={fadeIn("left", 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -36,7 +36,7 @@ const Home = () => {
           {/* button */}
           <motion.div
             className="hidden xl:flex z-10"
-            variants={fadeIn("down", 0.6)}
+            variants={fadeIn("right", 0.8)}
             initial="hidden"
             animate="show"
             exit="hidden"

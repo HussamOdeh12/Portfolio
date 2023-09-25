@@ -28,7 +28,7 @@
   }
   .btn,
   .input {
-    @apply h-[42px];
+    @apply h-[42px] backdrop-blur-sm;
   }
   .input {
     @apply w-full h-[42px] rounded-xl pl-6 capitalize;
@@ -38,6 +38,6 @@
     @apply bg-transparent outline-none focus:ring-1 focus:ring-accent border border-white/20 placeholder:text-white/50 placeholder:font-light;
   }
   .textarea {
-    @apply w-full h-[150px] lg:h-[180px] p-6 capitalize rounded-xl resize-none;
+    @apply w-full h-[150px] lg:h-[180px] p-6 capitalize rounded-xl resize-none backdrop-blur-lg;
   }
 }

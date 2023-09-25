@@ -7,67 +7,66 @@ import { BsArrowRight } from "react-icons/bs";
 const ProjectsBlog = () => {
   return (
     <>
-      <section className="pb-10">
-        <div className="container">
-          <div className="flex flex-wrap -mx-4 bg-black/25 p-4 rounded-xl z-10">
-            <BlogCard
-              live="Live Demo"
-              repo="Code"
-              CardTitle="Cyborg Gaming Page"
-              CardDescription="Simple one page using React.js"
-              image="/cyborg_pic.svg"
-              demo="https://hussamodeh12.github.io/cyborg-gaming/"
-              source="https://github.com/HussamOdeh12/cyborg-gaming"
-            />
-            <BlogCard
-              live="Live Demo"
-              repo="Code"
-              CardTitle="RedStore Website"
-              CardDescription="Created this website using HTML,CSS, and JavaScript, which is a website for selling clothes"
-              image="/redstore_pic.svg"
-              demo="https://hussamodeh12.github.io/RedStore/"
-              source="https://github.com/HussamOdeh12/RedStore"
-            />
-            <BlogCard
-              live="Live Demo"
-              repo="Code"
-              CardTitle="Nike Max"
-              CardDescription="One landing page for the Nike shoes website, using Bootstrap 5"
-              image="/max_pic.svg"
-              demo="https://hussamodeh12.github.io/Max/"
-              source="https://github.com/HussamOdeh12/Max"
-            />
-            <BlogCard
-              live="Live Demo"
-              repo="Code"
-              CardTitle="World Template"
-              CardDescription="This template is designed using only HTML and CSS"
-              image="/world_pic.svg"
-              demo="https://hussamodeh12.github.io/World_Template/"
-              source="https://github.com/HussamOdeh12/World_Template"
-            />
-            <BlogCard
-              live="Live Demo"
-              repo="Code"
-              CardTitle="FromScratch Website"
-              CardDescription="As the name indicates this website was built from scratch using JavaScript
-              with some features such as the ability to change colors, background, etc"
-              image="/scratch_pic.svg"
-              demo="https://hussamodeh12.github.io/FromScratch/"
-              source="https://github.com/HussamOdeh12/FromScratch"
-            />
-            <BlogCard
-              live="Live Demo"
-              repo="Code"
-              CardTitle="Eduford University"
-              CardDescription="University website using HTML, CSS, and JavaScript"
-              image="/eduford_pic.svg"
-              demo="https://hussamodeh12.github.io/Eduford/"
-              source="https://github.com/HussamOdeh12/Eduford"
-            />
-          </div>
+      <div className="flex items-center lg:items-start justify-center flex-col lg:flex-row gap-x-4 z-10">
+        <div className="z-10">
+          <Link
+            href="https://github.com/HussamOdeh12"
+            target="_blank"
+            className="btn text-xs rounded-xl border border-white/50 px-10 mb-4 lg:py-24 lg:px-2
+                  transition-all duration-300 flex items-center justify-center
+                  hover:border-accent/75 hover:bg-accent/75 hover:text-black/75 group"
+          >
+            <button>
+              <span
+                className="flex items-center justify-center group-hover:-translate-y-[120%] 
+              group-hover:opacity-0 transition-all duration-500"
+              >
+                View All
+              </span>
+              <BsArrowRight
+                className="lg:rotate-90 lg:transform-gpu -translate-y-[120%] opacity-0 
+                group-hover:flex group-hover:-translate-y-5 lg:group-hover:-translate-y-6 
+                group-hover:translate-x-3 lg:group-hover:translate-x-1.5
+                group-hover:opacity-100 transition-all duration-300 absolute text-[22px]"
+              />
+            </button>
+          </Link>
         </div>
-      </section>
+        <section className="pb-10">
+          <div className="container">
+            <div className="flex flex-wrap -mx-4 bg-black/50 p-4 rounded-xl z-10">
+              <BlogCard
+                live="Live Demo"
+                repo="Code"
+                CardTitle="Cyborg Gaming Page"
+                CardDescription="Simple one page using React.js"
+                image="/cyborg_thumb.png"
+                demo="https://hussamodeh12.github.io/cyborg-gaming/"
+                source="https://github.com/HussamOdeh12/cyborg-gaming"
+              />
+              <BlogCard
+                live="Live Demo"
+                repo="Code"
+                CardTitle="RedStore Website"
+                CardDescription="Created this website using HTML,CSS, and JavaScript, which is a website for selling clothes"
+                image="/redstore_thumb.png"
+                demo="https://hussamodeh12.github.io/RedStore/"
+                source="https://github.com/HussamOdeh12/RedStore"
+              />
+              <BlogCard
+                live="Live Demo"
+                repo="Code"
+                CardTitle="FromScratch Website"
+                CardDescription="As the name indicates this website was built from scratch using JavaScript
+              with some features such as the ability to change colors, background, etc"
+                image="/scratch_thumb.png"
+                demo="https://hussamodeh12.github.io/FromScratch/"
+                source="https://github.com/HussamOdeh12/FromScratch"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
     </>
   );
 };

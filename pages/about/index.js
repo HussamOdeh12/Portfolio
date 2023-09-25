@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import ParticlesContainer from "../../components/ParticlesContainer";
 import {
   FaHtml5,
   FaCss3,
@@ -102,7 +103,7 @@ const About = () => {
         <div className="pt-32 lg:pt-0 flex-1 flex flex-col justify-center text-center z-10">
           <motion.h2
             className="h2"
-            variants={fadeIn("right", 0.3)}
+            variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -111,7 +112,7 @@ const About = () => {
           </motion.h2>
           <motion.p
             className="text-xs md:text-sm mb-4"
-            variants={fadeIn("right", 0.3)}
+            variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -123,14 +124,14 @@ const About = () => {
         {/* info */}
         <motion.div
           className="flex flex-col w-full xl:max-w-[53%] h-[500px] lg:h-[300px] items-center z-10"
-          variants={fadeIn("down", 0.5)}
+          variants={fadeIn("left", 0.6)}
           initial="hidden"
           animate="show"
           exit="hidden"
         >
           <motion.div
             className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4"
-            variants={fadeIn("down", 0.6)}
+            variants={fadeIn("left", 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -153,7 +154,7 @@ const About = () => {
           </motion.div>
           <motion.div
             className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center justify-center"
-            variants={fadeIn("down", 0.7)}
+            variants={fadeIn("left", 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -189,6 +190,10 @@ const About = () => {
             })}
           </motion.div>
         </motion.div>
+      </div>
+      <div className="w-full h-full absolute right-0 bottom-0">
+        {/* particles */}
+        <ParticlesContainer />
       </div>
     </div>
   );

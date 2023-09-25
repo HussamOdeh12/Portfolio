@@ -12,7 +12,7 @@ const Socials = () => {
   return (
     <div
       className="flex items-center gap-x-2 lg:gap-x-4 text-2xl  bg-white/10 
-      backdrop-blur-md rounded-xl px-4 py-2"
+      backdrop-blur-lg rounded-xl px-4 py-2"
     >
       <Link
         target="_blank"
