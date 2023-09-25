@@ -57,7 +57,7 @@ const ProjectsBlog = () => {
                 live="Live Demo"
                 repo="Code"
                 CardTitle="FromScratch Website"
-                CardDescription="As the name indicates this website was built from scratch using JavaScript
+                CardDescription="This website was built using JavaScript
               with some features such as the ability to change colors, background, etc"
                 image="/scratch_thumb.png"
                 demo="https://hussamodeh12.github.io/FromScratch/"

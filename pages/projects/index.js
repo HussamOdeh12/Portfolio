@@ -2,12 +2,10 @@ import ProjectBlogs from "../../components/ProjectsBlog";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import ParticlesContainer from "../../components/ParticlesContainer";
-import { BsArrowRight } from "react-icons/bs";
-import Link from "next/link";
 
 const Projects = () => {
   return (
-    <div className="h-[100%] bg-primary/75 pt-32 flex items-center">
+    <div className="h-[100%] lg:h-[100vh] bg-primary/75 pt-32 lg:pt-48 overflow-hidden flex items-center">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center">
           {/* text */}
@@ -33,7 +31,7 @@ const Projects = () => {
             </motion.p>
           </div>
           {/* Projects */}
-          <div className="max-w-[100%] lg:max-w-[84.5%] mb-8 lg:mb-0">
+          <div className="max-w-[100%] lg:max-w-[75%] mb-12">
             <ProjectBlogs />
           </div>
         </div>
